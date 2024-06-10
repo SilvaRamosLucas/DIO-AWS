@@ -77,7 +77,7 @@ The `git commit` command records the changes added to the staging area in a new 
 $ git commit -m "Message describing the changes"
 ```
 
-### 5. Checking Status
+### 5. Verificando Status
 
 The `git status` command shows the current state of the working directory and the staging area.
 
@@ -85,7 +85,7 @@ The `git status` command shows the current state of the working directory and th
 $ git status
 ```
 
-### 6. Pushing Changes
+### 6. Enviando Mudanças
 
 The `git push` command sends commits from the local repository to a remote repository.
 
@@ -93,7 +93,7 @@ The `git push` command sends commits from the local repository to a remote repos
 $ git push origin master
 ```
 
-### 7. Pulling Changes
+### 7. Recebendo Mudanças
 
 The `git pull` command fetches and integrates changes from a remote repository.
 
@@ -101,7 +101,7 @@ The `git pull` command fetches and integrates changes from a remote repository.
 $ git pull origin master
 ```
 
-### 8. Managing Branches
+### 8. Gerenciando Branches
 
 The `git branch` command allows you to manage branches.
 
