@@ -59,7 +59,7 @@ The `git clone` command is used to create a copy of an existing repository.
 $ git clone https://github.com/user/repo.git
 ```
 
-### 3. Adding Changes
+### 3. Adicionando Mudanças
 
 The `git add` command adds changes in the working directory to the staging area.
 
@@ -69,7 +69,7 @@ $ git add file.txt
 $ git add .
 ```
 
-### 4. Committing Changes
+### 4. Commit de Mudanças
 
 The `git commit` command records the changes added to the staging area in a new commit.
 
@@ -293,7 +293,7 @@ $ git config --global user.email "youremail@example.com"
 $ git config --list
 ```
 
-## ☑ Conclusion
+## ☑ Conclusão
 
 ### Esses comandos formam a base do uso diário do Git, permitindo que os desenvolvedores controlem a versão do seu código, colaborem de maneira eficiente e mantenham um histórico claro e detalhado de mudanças no projeto. Dominar esses comandos é essencial para qualquer desenvolvedor que trabalha em equipe ou em projetos de longo prazo. Happy Coding! 🚀
 
