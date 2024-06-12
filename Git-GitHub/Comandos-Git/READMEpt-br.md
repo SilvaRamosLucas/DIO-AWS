@@ -278,7 +278,7 @@ $ git submodule init
 $ git submodule update
 ```
 
-### 22. Configuring Git
+### 22. Configurando o Git
 
 O comando `git config` configura opções e comportamentos do Git.
 
