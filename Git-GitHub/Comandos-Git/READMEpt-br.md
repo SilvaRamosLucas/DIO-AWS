@@ -61,25 +61,25 @@ $ git clone https://github.com/usuario/repo.git
 
 ### 3. Adicionando Mudanças
 
-O comando `git add` adiciona mudanças no diretóriode trabalho para a área de 
+O comando `git add` adiciona mudanças no diretório de trabalho para a *Stage Area*
 
 ```sh
-#To add all modified files
-$ git add file.txt
+# Para adicionar todos os arquivos modificados
+$ git add arquivo.txt
 $ git add .
 ```
 
 ### 4. Commit de Mudanças
 
-The `git commit` command records the changes added to the staging area in a new commit.
+O comando `git commit` registra as mudanças adicionadas na *Stage Area* em um novo commit.
 
 ```sh
-$ git commit -m "Message describing the changes"
+$ git commit -m "Mensagem descrevendo as mudanças"
 ```
 
 ### 5. Verificando Status
 
-The `git status` command shows the current state of the working directory and the staging area.
+O comando `git status` mostra o estado atual do diretório de trabalho e da *Stage Area*.
 
 ```sh
 $ git status
@@ -87,7 +87,7 @@ $ git status
 
 ### 6. Enviando Mudanças
 
-The `git push` command sends commits from the local repository to a remote repository.
+O comando `git push` envia commits do repositório local para um repositório remoto.
 
 ```sh
 $ git push origin master
@@ -95,7 +95,7 @@ $ git push origin master
 
 ### 7. Recebendo Mudanças
 
-The `git pull` command fetches and integrates changes from a remote repository.
+O comando `git pull` busca e integra mudanças de um repositório remoto.
 
 ```sh
 $ git pull origin master
@@ -103,143 +103,143 @@ $ git pull origin master
 
 ### 8. Gerenciando Branches
 
-The `git branch` command allows you to manage branches.
+O comando `git branch` permiteque você gerencie branches.
 
 ```sh
-# List branches
+# Listar branches
 $ git branch
 
-# Create a new branch
-$ git branch new-feature
+# Criar uma nova branch
+$ git branch nova-funcionalidade
 
 # Delete a branch
-$ git branch -d old-branch
+$ git branch -d branch-antiga
 ```
 
-### 9. Switching Branches
+### 9. Trocando de Branches
 
-The `git checkout` command is used to switch branches or restore files.
+O comando `git checkout` é usado para trocar de branches ou restaurar arquivos.
 
 ```sh
-# Switch to another branch
-$ git checkout new-feature
+# Trocar para outra branch
+$ git checkout nova-funcionalidade
 
-# Create a new branch and switch to it
-$ git checkout -b new-feature
+# Criar uma nova branch e trocar para ela
+$ git checkout -b nova-funcionalidade
 ```
 
-### 10. Merging Branches
+### 10. Mesclando Branches
 
-The `git merge` command combines changes from different branches.
+O comando `git merge` combina mudanças de diferentes branches.
 
 ```sh
 $ git checkout master
-$ git merge new-feature
+$ git merge nova-funcionalidade
 ```
 
-### 11. Viewing Commit History
+### 11. Visualizando Histórico de Commits
 
-The `git log` command displays the commit history of the repository.
+O comando `git log` exibe o histórico de commits do repositório.
 
 ```sh
 $ git log
 
-# Show history with diff stats
+# Mostrar histórico com estatíscas de diff
 $ git log --stat
 ```
 
-### 12. Managing Remote Repositories
+### 12. Gerenciando Repositórios Remotos
 
-The `git remote` command allows you to manage connections to remote repositories.
+O comando `git remote` permite que você gerencie conexões com repositórios remotos.
 
 ```sh
-# List remote repositories
+# Listar repositórios remotos
 $ git remote -v
 
-# Add a remote repository
-$ git remote add origin https://github.com/user/repo.git
+# Adicionar um repositório remoto
+$ git remote add origin https://github.com/usuario/repo.git
 
-# Remove a remote repository
+# Remover um repositório remoto
 $ git remote remove origin
 ```
 
-### 13. Stashing Changes
+### 13. Guardar Mudanças Temporariamente
 
-The `git stash` command temporarily saves uncommitted changes.
+O comando `git stash` salva temporariamente mudanças não comitadas.
 
 ```sh
-# Save uncommitted changes
+# Salvar mudanças não comitadas
 $ git stash
 
-# List saved stashes
+# Listar stashes salvos
 $ git stash list
 
-# Apply the most recent stash
+# Aplciar o stash mais recente
 $ git stash apply
 
-# Apply and remove the most recent stash
+# Aplicar e remover o stash mais recente
 $ git stash pop
 ```
 
-### 14. Rebasing Branches
+### 14. Rebasing de Branches
 
-The `git rebase` command reapplies commits from one branch on top of another.
+O comando `git rebase` reaplica commits de uma branch  no topo de outra.
 
 ```sh
 $ git checkout my-branch
 $ git rebase master
 ```
 
-### 15. Resetting Changes
+### 15. Resetando Mudanças
 
-The `git reset` command moves the current branch pointer and modifies the staging area and/or working directory.
+O comando `git reset` move o ponteiro da branch atual e modifica a *Stage Area* e/ou o diretório de trabalho.
 
 ```sh
-# Revert commits but keep changes in the working directory
+# Reverter commits, mas manter mudanças no diretório de trabalho
 $ git reset --soft HEAD~1
 
-# Revert commits and changes in the staging area, but keep in the working directory
+# Reverter commits e mudanças na Stage Area, mas manter no diretório de trabalho 
 $ git reset --mixed HEAD~1
 
-# Revert commits and all changes
+# Reverter commits e todas as alterações
 $ git reset --hard HEAD~1
 ```
 
-### 16. Showing Differences
+### 16. Mostrando Diferenças
 
-The `git diff` command shows the differences between commits, branches, and the working directory.
+O comando `git diff` mostra as diferenças entre commits, branches e o diretório de trabalho.
 
 ```sh
-# Show differences between the working directory and the staging area
+# Mostrar diferenças entre o diretório de trabalho e a Stage Area
 $ git diff
 
-# Show differences between the staging area and the last commit
+# Mostrar diferenças entra a Stage Area e o último commit
 $ git diff --cached
 
-# Show differences between two branches
+# Mostrar diferenças entre duas branhces
 $ git diff branch1 branch2
 ```
 
-### 17. Tagging Commits
+### 17. Marcando Commits
 
-The `git tag` command marks specific points in the repository's history.
+O comando `git tag` marca pontos específicos no histórico do repositório.
 
 ```sh
-# Create an annotated tag
-$ git tag -a v1.0 -m "Version 1.0"
+# Criar uma tag anotada
+$ git tag -a v1.0 -m "Versão 1.0"
 
-# Create a lightweight tag
+# Criar uma tag leve
 $ git tag v1.1
 
-# List all tags
+# Listar todas as tags
 $ git tag
 
-# Push tags to the remote repository
+# Enviar tags para o repositório remoto
 $ git push origin --tags
 ```
 
-### 18. Cherry-Picking Commits
-The `git cherry-pick` command applies a specific commit from one branch to another.
+### 18. Cherry-Picking de Commits
+O comando `git cherry-pick` aplica um commit específico de uma branch em outra.
 
 ```sh
 $ git checkout master
@@ -248,48 +248,48 @@ $ git cherry-pick abc123
 
 ### 19. Fetching Changes
 
-The `git fetch` command fetches changes from a remote repository without automatically integrating them.
+O comando `git fetch` busca mudanças de um repositório remoto sem integrá-las automaticamente.
 
 ```sh
 $ git fetch origin
 ```
 
-### 20. Archiving a Repository
+### 20. Arquivando um Repositório
 
-The `git archive` command creates a tar or zip file of a repository tree.
+O comando `git archive` cria um arquivo tar ou zip de uma árvore do repositório.
 
 ```sh
-# Create a tar file of the master branch
-$ git archive --format=tar master | gzip > project.tar.gz
+# Criar um arquivo tar da branch master
+$ git archive --format=tar master | gzip > projeto.tar.gz
 ```
 
-### 21. Managing Submodules
+### 21. Gerenciando Submódulos
 
-The `git submodule` command manages submodules, which are Git repositories inside another Git repository.
+O comando `git submodule` gerencia submódulos, que são repositórios Git dentro de outro repositório Git.
 
 ```sh
-# Add a submodule
-$ git submodule add https://github.com/user/subrepo.git path/to/subrepo
+# Adicionar um submódulo
+$ git submodule add https://github.com/usuario/subrepo.git caminho/para/subrepo
 
-# Initialize submodules
+# Inicializar submódulos
 $ git submodule init
 
-# Update submodules
+# Atualizar submódulos
 $ git submodule update
 ```
 
 ### 22. Configuring Git
 
-The `git config` command configures Git options and behaviors.
+O comando `git config` configura opções e comportamentos do Git.
 
 ```sh
-# Configure username
-$ git config --global user.name "Your Name"
+# Configurar nome de usuário
+$ git config --global user.name "Seu Nome"
 
-# Configure email
-$ git config --global user.email "youremail@example.com"
+# Configurar email
+$ git config --global user.email "seuemail@examplo.com"
 
-# View all configurations
+# Ver todas as configurações
 $ git config --list
 ```
 
