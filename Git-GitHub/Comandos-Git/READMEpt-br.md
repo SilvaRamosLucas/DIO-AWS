@@ -2,7 +2,7 @@
 
 ## Introdução
 
-Git é uma ferramenta poderosa e essencial para controle de versão, amplamente utilizada no desenvolvimento de software. Ela permite que os desenvolvedores colaborem de maneira eficiente e acompanhem as mudanças no código-fonte ao longo do tempo. Abaixo, você encontrará os comandos Git mais importantes, acompanhados de exemplos para ilustrar seu uso.Git is a powerful and essential tool for version control, widely used in software development. It allows developers to collaborate efficiently and track changes in the source code over time. Below, you'll find the most important Git commands, accompanied by examples to illustrate their use.
+Git é uma ferramenta poderosa e essencial para controle de versão, amplamente utilizada no desenvolvimento de software. Ela permite que os desenvolvedores colaborem de maneira eficiente e acompanhem as mudanças no código-fonte ao longo do tempo. Abaixo, você encontrará os comandos Git mais importantes, acompanhados de exemplos para ilustrar seu uso.
 
 ---
 
@@ -53,15 +53,15 @@ $ git init
 
 ### 2. Clonando um Repositório
 
-The `git clone` command is used to create a copy of an existing repository.
+O comando `git clone` é usado para criar uma cópia de um repositório existente.
 
 ```sh
-$ git clone https://github.com/user/repo.git
+$ git clone https://github.com/usuario/repo.git
 ```
 
 ### 3. Adicionando Mudanças
 
-The `git add` command adds changes in the working directory to the staging area.
+O comando `git add` adiciona mudanças no diretóriode trabalho para a área de 
 
 ```sh
 #To add all modified files
