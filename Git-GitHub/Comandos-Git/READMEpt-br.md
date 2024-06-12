@@ -30,10 +30,10 @@ Git é uma ferramenta poderosa e essencial para controle de versão, amplamente 
 16. [Mostrar Diferenças](#16-mostrar-diferenças)
 17. [Marcando Commits](#17-marcando-commits)
 18. [Cherry-Picking de Commits](#18-cherry-picking-de-commits)
-19. [Buscando Mudanças](#19-buscando-mudanças)
+19. [Buscar Mudanças](#19-buscar-mudanças)
 20. [Arquivando um Repositório](#20-arquivando-um-repositório)
 21. [Gerenciando Submódulos](#21-gerenciando-submódulos)
-22. [Configurando o Git](#22-configurando-git)
+22. [Configurando o Git](#22-configurando-o-git)
 
 </details>
 
@@ -163,7 +163,7 @@ $ git remote add origin https://github.com/usuario/repo.git
 $ git remote remove origin
 ```
 
-### 13. Guardar Mudanças Temporariamente
+### 13. Salvar Mudanças Temporárias
 
 O comando `git stash` salva temporariamente mudanças não comitadas.
 
@@ -190,7 +190,7 @@ $ git checkout my-branch
 $ git rebase master
 ```
 
-### 15. Resetando Mudanças
+### 15. Desfazer Alterações
 
 O comando `git reset` move o ponteiro da branch atual e modifica a *Stage Area* e/ou o diretório de trabalho.
 
@@ -205,7 +205,7 @@ $ git reset --mixed HEAD~1
 $ git reset --hard HEAD~1
 ```
 
-### 16. Mostrando Diferenças
+### 16. Mostrar Diferenças
 
 O comando `git diff` mostra as diferenças entre commits, branches e o diretório de trabalho.
 
@@ -246,7 +246,7 @@ $ git checkout master
 $ git cherry-pick abc123
 ```
 
-### 19. Fetching Changes
+### 19. Buscar Mudanças
 
 O comando `git fetch` busca mudanças de um repositório remoto sem integrá-las automaticamente.
 
